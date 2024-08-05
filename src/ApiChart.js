@@ -74,7 +74,7 @@ const ApiChart = () => {
 
     yAxis.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -margin.left + 20)
+      .attr('y', -margin.left + 3)
       .attr('x', -innerHeight / 2)
       .attr('dy', '1em')
       .style('text-anchor', 'middle')
@@ -180,7 +180,7 @@ const ApiChart = () => {
 
   return (
     <div className="App" style={{ fontFamily: 'Onest', maxWidth: '1200px', margin: '0 auto' }}>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px', paddingRight: '20px', paddingTop: '10px' }}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px', paddingRight: '180px', paddingTop: '10px' }}>
         <button 
           style={activeChart === 'INR' ? activeButtonStyle : inactiveButtonStyle}
           onClick={() => setActiveChart('INR')}
